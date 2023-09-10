@@ -3,7 +3,7 @@ const app = express();
 const moment = require('moment'); // Import the moment library
 
 app.get('/api', (req, res) => {
-  const slackName = req.query.slack_nam e || '';
+  const slackName = req.query.slack_name || '';
   const track = req.query.track || '';
   const currentDay = new Date().toLocaleDateString('en-US', { weekday: 'long' });
   const utcTime = moment().utc().format('YYYY-MM-DDTHH:mm:ss[Z]'); // Format UTC time as specified
