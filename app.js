@@ -6,8 +6,8 @@ app.get('/api', (req, res) => {
   const track = req.query.track || '';
   const currentDay = new Date().toLocaleDateString('en-US', { weekday: 'long' });
   const utcTime = new Date().toISOString();
-  const githubFileUrl = 'https://github.com/username/repo/blob/main/file_name.ext';
-  const githubRepoUrl = 'https://github.com/username/repo';
+  const githubFileUrl = 'https://github.com/Splendidabbey/hng-stage1/blob/main/app.js';
+  const githubRepoUrl = 'https://github.com/splendidabbey/hng-stage1';
 
   const response = {
     slack_name: slackName,
